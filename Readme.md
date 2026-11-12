@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Батор Батуев](https://up.htmlacademy.ru/javascript-individual/3/user/2558253).
-* Наставник: [Алексей Хапов] (https://htmlacademy.ru/profile/id118459).
+* Наставник: [Алексей Хапов](https://htmlacademy.ru/profile/id118459).
 
 ---
 
