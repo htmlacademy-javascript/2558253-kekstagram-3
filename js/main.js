@@ -1,3 +1,7 @@
 import { generatePhotos } from './data';
+import { renderThumbnails } from './thumbnails';
 
-window.console.log(generatePhotos());
+const pictures = generatePhotos();
+renderThumbnails(pictures);
+
+window.console.log(pictures);
