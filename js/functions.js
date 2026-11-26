@@ -9,16 +9,16 @@ const isPalindrome = (str) => {
 
 const extractNumbers = (str) => parseInt(str.toString().replace(/\D/g, ''), 10);
 
-const timeToMinutes = (time) => {
+const convertTimeToMinutes = (time) => {
   const [hours, minutes] = time.split(':').map((v, i) => i === 1 ? v.padEnd(2, '0') : v).map(Number);
 
   return hours * 60 + minutes;
 };
 
 const isMeetingWithinDay = (str1, str2, str3, duration) => {
-  const dayStart = timeToMinutes(str1);
-  const dayEnd = timeToMinutes(str2);
-  const meetingStart = timeToMinutes(str3);
+  const dayStart = convertTimeToMinutes(str1);
+  const dayEnd = convertTimeToMinutes(str2);
+  const meetingStart = convertTimeToMinutes(str3);
   const meetingEnd = meetingStart + duration;
 
   return meetingStart >= dayStart && meetingEnd <= dayEnd;
